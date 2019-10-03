@@ -1,7 +1,7 @@
 const User = require('../models/User');
 
 module.exports = {
-  store: async (req, res) => {
+  async store(req, res) {
     const { email } = req.body;
 
     let user = await User.findOne({ email });
