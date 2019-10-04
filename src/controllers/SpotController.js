@@ -29,6 +29,6 @@ module.exports = {
       user: userId,
     });
 
-    return res.json({ spot });
+    return res.json(spot);
   },
 };
